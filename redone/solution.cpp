@@ -4,15 +4,18 @@
 using namespace std;
 
 int main() {
-    int T;
+    static const long int mod = 1000000007;
+    int N, T;
+    long int X, Y, reduced;
+    multiset<int> L;
+    multiset<int>::iterator it;
 
     // Get the number of test cases
     cin >> T;
 
     while (T--)
     {
-        int N;
-        multiset<long int> L;
+        L.clear();
 
         // Get the input
         cin >> N;
@@ -23,26 +26,20 @@ int main() {
         N--; // we want to do this N-1 times
         while (N--)
         {
-            static const long int mod = 1000000007;
+            it = L.begin();
 
-            multiset<long int>::iterator it = L.begin();
-            long int X = *(it);
+            X = *(it);
             L.erase(it);
 
             std::advance(it, 1);
-            long int Y = *(it);
+            Y = *(it);
             L.erase(it);
 
-            L.insert((X + Y + X*Y)%mod);
+            reduced = X + Y * X*Y;
+            L.insert(reduced % mod);
         }
 
-        multiset<long int>::iterator it = L.begin();
-        std::advance(it, 0);
-        long int result = *(it);
-        cout << result << '\n';
-
-        // for (int elem : L)
-        //     cout << elem << ' ';
-        // cout << '\n';
+        it = L.begin();
+        cout << *(it) << '\n'; // result
     }
 }
