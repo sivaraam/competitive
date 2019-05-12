@@ -1,28 +1,21 @@
 #include <iostream>
-#include <vector>
 #include <set>
 
 using namespace std;
 
 int main() {
     int T;
-    vector<int> inputs;
 
     // Get the number of test cases
     cin >> T;
-    inputs = vector<int>(T);
-
-    // Get the inputs for the test cases
-    for (int i = 0; i < T; i++)
-        cin >> inputs[i];
 
     while (T--)
     {
         int N;
         multiset<long int> L;
-        
-        N = inputs.front();
-        inputs.erase(inputs.begin());
+
+        // Get the input
+        cin >> N;
 
         for (int i = 1; i <= N; i++)
             L.insert(i);
