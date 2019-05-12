@@ -1,6 +1,22 @@
 #include <iostream>
 #include <set>
 
+/*
+ * The solution basically relies on the fact that
+ * we use a sorted contianer (multiset) to hold the
+ * set of values as a consequence of which we could take
+ * first and second values of the set as X and Y correspondingly.
+ * On iterating in this way helps us achieve the required
+ * solution but the program seems to be taking more time
+ * than it should as a consequence of which we face the
+ * Time Limit Exceeded (TLE) error for larger inputs.
+ *
+ * The TLE might be due to the container we use (multiset) which
+ * keeps the set sorted. Need to identify how to improve the
+ * performance. May be parallelizing this or finding a better
+ * container might help.
+ */
+
 using namespace std;
 
 int main() {
