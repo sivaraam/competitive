@@ -36,8 +36,9 @@ int main() {
         // Get the input
         cin >> N;
 
+        it = L.end();
         for (int i = 1; i <= N; i++)
-            L.insert(i);
+            L.emplace_hint(it, i);
 
         N--; // we want to do this N-1 times
         while (N--)
@@ -52,7 +53,7 @@ int main() {
             L.erase(it);
 
             reduced = X + Y * (1 + X);
-            L.insert(reduced % mod);
+            L.emplace(reduced % mod);
         }
 
         it = L.begin();
