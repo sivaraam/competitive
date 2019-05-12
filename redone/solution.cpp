@@ -35,7 +35,7 @@ int main() {
             Y = *(it);
             L.erase(it);
 
-            reduced = X + Y * X*Y;
+            reduced = X + Y * (1 + X);
             L.insert(reduced % mod);
         }
 
