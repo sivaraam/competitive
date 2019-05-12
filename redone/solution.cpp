@@ -1,7 +1,6 @@
 #include <iostream>
 #include <vector>
 #include <set>
-#include <numeric>
 
 using namespace std;
 
@@ -21,17 +20,12 @@ int main() {
     {
         int N;
         multiset<long int> L;
-        vector<long int> initial_vect;
         
         N = inputs.front();
         inputs.erase(inputs.begin());
 
-        initial_vect = vector<long int>(N);
-        
-        std::iota(initial_vect.begin(), initial_vect.end(), 1);
-        L = multiset<long int>(initial_vect.begin(), initial_vect.end());
-        // L.insert(10);
-        // L.insert(6);
+        for (int i = 1; i <= N; i++)
+            L.insert(i);
 
         N--; // we want to do this N-1 times
         while (N--)
