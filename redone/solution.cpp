@@ -26,15 +26,12 @@ int main() {
             static const long int mod = 1000000007;
 
             multiset<long int>::iterator it = L.begin();
-            multiset<long int>::iterator end_it = L.end();
-
-            std::advance(it, 0);
             long int X = *(it);
             L.erase(it);
 
-            std::advance(end_it, -1);
-            long int Y = *(end_it);
-            L.erase(end_it);
+            std::advance(it, 1);
+            long int Y = *(it);
+            L.erase(it);
 
             L.insert((X + Y + X*Y)%mod);
         }
