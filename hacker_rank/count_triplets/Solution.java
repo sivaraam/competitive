@@ -21,17 +21,9 @@ public class Solution {
                     long firstElem = arr.get(firstPos),
                         secondElem = arr.get(secondPos),
                         thirdElem = arr.get(thirdPos);
-                    long firstMultiple = firstElem * r,
-                         secondMultiple = secondElem * r,
-                         thirdMultiple = thirdElem * r;
 
                     if (
-                        firstMultiple == secondElem && secondMultiple == thirdElem ||
-                        firstMultiple == thirdElem && thirdMultiple == secondElem  ||
-                        secondMultiple == firstElem && firstMultiple == thirdElem  ||
-                        secondMultiple == thirdElem && thirdMultiple == firstElem  ||
-                        thirdMultiple == firstElem && firstMultiple == secondElem  ||
-                        thirdMultiple == secondElem && secondMultiple == firstElem
+                        firstElem * r == secondElem && secondElem * r == thirdElem
                     ) {
                         validTriplets++;
                     }
