@@ -1,7 +1,7 @@
 ## Competitive Programming
 
 A repository containing some solutions to problems from competitive programming
-platforms such as [Codechef][1] and [HackerRank]. Also available in
+platforms such as [Codechef][1] and [HackerRank][2]. Also available in
 the respective folders are the problem statements in the form of a PDF file.
 There might also be some sample input files.
 
