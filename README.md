@@ -14,7 +14,7 @@ Most of the programs should be standalone so Makefile's aren't written for them.
 The programs work well with a compiler that supports
 C++14. It has been tested using a `g++` version 7.4.0-1ubuntu1~18.04.
 
-### Java
+#### Java
 `javac Solution.java`
 
 The program works well with a OpenJDK 8 Environment.
