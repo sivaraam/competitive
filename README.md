@@ -6,7 +6,7 @@ the respective folders are the problem statements in the form of a PDF file.
 There might also be some sample input files.
 
 ### Building
-Most of the programs should be standalone so Makefile's aren't written for them,
+Most of the programs should be standalone so Makefile's aren't written for them.
 
 #### C++
 `g++ solution.cpp`
