@@ -13,17 +13,24 @@ public class Solution {
         int len = arr.size();
 
         // sort the list for the sake of simplicity
-        Collections.sort(arr);
+        // Collections.sort(arr);
+
+        long[] elems = new long[3];
 
         for (int firstPos = 0; firstPos < len - 2; firstPos++) {
             for (int secondPos = firstPos + 1; secondPos < len - 1; secondPos++) {
                 for (int thirdPos = secondPos + 1; thirdPos < len; thirdPos++) {
+                    elems[0] = arr.get(firstPos);
+                    elems[1] = arr.get(secondPos);
+                    elems[2] = arr.get(thirdPos);
 
-                    if (arr.get(firstPos) * r != arr.get(secondPos)) {
+                    Arrays.sort(elems);
+
+                    if (elems[0] * r != elems[1]) {
                         continue;
                     }
 
-                    if (arr.get(secondPos) * r != arr.get(thirdPos)) {
+                    if (elems[1] * r != elems[2]) {
                         continue;
                     }
 
