@@ -9,25 +9,51 @@ import java.util.regex.*;
 public class Solution {
     // Complete the countTriplets function below.
     static long countTriplets(List<Long> arr, long r) {
-        long validTriplets = 0;
+        /*
+         * We have two maps: left, right
+         *
+         * left: contains elements and the occurences of those
+         *       elements less than current index. initially empty
+         * right: contains elements and the occurences of those
+         *        elements greater than the current index. initially
+         *        contains all elements
+         */
+
+        Map<Long, Long> left = new HashMap<Long, Long>(),
+                        right = new HashMap<Long, Long>();
         int len = arr.size();
+        long validTriplets = 0;
 
-        // sort the list for the sake of simplicity
-        // Collections.sort(arr);
+        for (int i = 0; i < len; i++) {
+            long currElem = arr.get(i);
+            if (right.containsKey(currElem)) {
+                right.put(currElem,  right.get(currElem) + 1);
+            }
+            else {
+                right.put(currElem, 1L);
+            }
+        }
 
-        for (int firstPos = 0; firstPos < len - 2; firstPos++) {
-            for (int secondPos = firstPos + 1; secondPos < len - 1; secondPos++) {
-                for (int thirdPos = secondPos + 1; thirdPos < len; thirdPos++) {
-                    long firstElem = arr.get(firstPos),
-                        secondElem = arr.get(secondPos),
-                        thirdElem = arr.get(thirdPos);
+        for (int i = 0; i < len; i++) {
+            long currElem = arr.get(i);
 
-                    if (
-                        firstElem * r == secondElem && secondElem * r == thirdElem
-                    ) {
-                        validTriplets++;
-                    }
+            // reduce occurence of right element by 1
+            right.put(currElem, right.get(currElem) - 1);
+
+            if (currElem % r == 0) {
+                if (
+                    left.containsKey(currElem/r) &&
+                    right.containsKey(currElem*r)
+                ) {
+                    validTriplets += left.get(currElem/r) * right.get(currElem*r);
                 }
+            }
+
+            if (left.containsKey(currElem)) {
+                left.put(currElem, left.get(currElem) + 1);
+            }
+            else {
+                left.put(currElem, 1L);
             }
         }
 
