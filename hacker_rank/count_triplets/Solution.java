@@ -15,26 +15,26 @@ public class Solution {
         // sort the list for the sake of simplicity
         // Collections.sort(arr);
 
-        long[] elems = new long[3];
-
         for (int firstPos = 0; firstPos < len - 2; firstPos++) {
             for (int secondPos = firstPos + 1; secondPos < len - 1; secondPos++) {
                 for (int thirdPos = secondPos + 1; thirdPos < len; thirdPos++) {
-                    elems[0] = arr.get(firstPos);
-                    elems[1] = arr.get(secondPos);
-                    elems[2] = arr.get(thirdPos);
+                    long firstElem = arr.get(firstPos),
+                        secondElem = arr.get(secondPos),
+                        thirdElem = arr.get(thirdPos);
+                    long firstMultiple = firstElem * r,
+                         secondMultiple = secondElem * r,
+                         thirdMultiple = thirdElem * r;
 
-                    Arrays.sort(elems);
-
-                    if (elems[0] * r != elems[1]) {
-                        continue;
+                    if (
+                        firstMultiple == secondElem && secondMultiple == thirdElem ||
+                        firstMultiple == thirdElem && thirdMultiple == secondElem  ||
+                        secondMultiple == firstElem && firstMultiple == thirdElem  ||
+                        secondMultiple == thirdElem && thirdMultiple == firstElem  ||
+                        thirdMultiple == firstElem && firstMultiple == secondElem  ||
+                        thirdMultiple == secondElem && secondMultiple == firstElem
+                    ) {
+                        validTriplets++;
                     }
-
-                    if (elems[1] * r != elems[2]) {
-                        continue;
-                    }
-
-                    validTriplets++;
                 }
             }
         }
