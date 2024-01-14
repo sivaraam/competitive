@@ -1,0 +1,9 @@
+Determine sum of three integers
+
+The goal of this exercise is to determine if the sum of three integers is equal to the given value.
+
+Problem statement: Given an array of integers and a value, determine if there are any three integers in the array whose sum equals the given value.
+
+Consider this array and the target sums.
+3 7 1 2 8 4
+5
