@@ -1,5 +1,3 @@
-package sum_three_integers;
-
 import java.util.Arrays;
 import java.util.List;
 
