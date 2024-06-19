@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7018b959-428e-43d3-8ac7-b9f09098d4f6" name="Changes" comment="" />
+    <list default="true" id="7018b959-428e-43d3-8ac7-b9f09098d4f6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/data/CustomerDataIdAssigner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/key/MatchingKey.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/key/MatchingKeyIdsHolder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CsvReplDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/CsvReplDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/data/CustomerData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/data/CustomerData.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,7 +87,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/mnt/d/kaartic/competitive/record_linkage"
+    "last_opened_file_path": "/mnt/d/kaartic/competitive/record_linkage",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -144,12 +153,17 @@
     </task>
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/CsvReplDemo.java</url>
-          <line>36</line>
+          <line>35</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
