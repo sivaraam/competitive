@@ -4,17 +4,22 @@ import de.siegmar.fastcsv.reader.CsvRecord;
 import lombok.Builder;
 import lombok.Data;
 import org.apache.commons.validator.routines.EmailValidator;
+import org.example.key.MatchingKey;
 
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * The class that uniquely represents the represents a particular
+ * CustomerData entry.
+ */
 @Data
 @Builder
 public class CustomerData {
-    Integer customerId;
+    Long customerId;
     String firstName,
             lastName,
-            phoneNumber1,
+            phoneNumber,
             email,
             zipCode;
 
@@ -24,10 +29,8 @@ public class CustomerData {
         newCustomer.firstName(getOptionalField(customerValue, 0));
         newCustomer.lastName(getOptionalField(customerValue,1));
 
-        // TODO: Need to think of a better way to handle
-        //  exceptions that occur while parsing a phone number
         String phone1 = getOptionalField(customerValue,2);
-        newCustomer.phoneNumber1(phone1);
+        newCustomer.phoneNumber(phone1);
 
         String email = getOptionalField(customerValue, 3);
         if (email != null) {
@@ -40,8 +43,6 @@ public class CustomerData {
             }
         }
 
-        // TODO: Need to think of a better way to handle
-        //  exceptions that occur while parsing a website
         String zipCode = getOptionalField(customerValue, 4);
         newCustomer.zipCode(zipCode);
 
@@ -57,26 +58,11 @@ public class CustomerData {
         }
     }
 
-    /*
-     * Returns true when the phone number or the last name matches.
-     */
-    public static boolean doesMatch(CustomerData instance1, CustomerData instance2) {
-        boolean phoneNumberMatches =
-                instance1.phoneNumber1 != null && instance2.phoneNumber1 != null &&
-                instance1.phoneNumber1.equals(instance2.phoneNumber1);
-
-        boolean emailMatches =
-                instance1.email != null && instance2.email != null &&
-                instance1.email.equals(instance2.email);
-
-        return  (phoneNumberMatches || emailMatches);
-    }
-
     public List<String> toCsvLine() {
         List<String> csvLine = new ArrayList<>();
         csvLine.add(firstName);
         csvLine.add(lastName);
-        csvLine.add(phoneNumber1);
+        csvLine.add(phoneNumber);
         csvLine.add(email);
         csvLine.add(zipCode);
         if (customerId != null)
@@ -84,5 +70,14 @@ public class CustomerData {
 
         return csvLine;
     }
+
+    /**
+     * Constructs the matching key instance corresponding to this
+     * CustomerData instance.
+     */
+    public MatchingKey constructMatchingKey() {
+        return new MatchingKey(phoneNumber, email);
+    }
+
 }
 

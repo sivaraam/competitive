@@ -18,6 +18,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import static org.example.data.CustomerDataIdAssigner.assignUniqueIds;
+
 public class CsvReplDemo {
     private static List<CustomerData> customers = new ArrayList<>();
 
@@ -40,6 +42,10 @@ public class CsvReplDemo {
                     case "1":
                         String filePath = reader.readLine("Enter CSV file path: ");
                         parseCsv(filePath.trim(), terminal);
+                        if (!customers.isEmpty()) {
+                            assignUniqueIds(customers);
+                            reader.getTerminal().writer().println("Unique IDs have been assigned to customers.");
+                        }
                         break;
                     case "2":
                         printCsv(terminal);
@@ -52,42 +58,10 @@ public class CsvReplDemo {
                         terminal.writer().println("Invalid option. Please try again.");
                         terminal.flush();
                 }
-
-                assignUniqueIds();
             }
         } catch (IOException e) {
             System.err.println("Failed to get a terminal. Exiting.");
             System.exit(1);
-        }
-    }
-
-    private static void assignUniqueIds() {
-        int newUniqueId = 0;
-
-        for (int i = 0; i < customers.size(); i++) {
-            List<Integer> uniqueCustomers = new ArrayList<>();
-            CustomerData cust1 = customers.get(i);
-            uniqueCustomers.add(i);
-            int uniqueId;
-
-            if (cust1.getCustomerId() == null) {
-                uniqueId = ++newUniqueId;
-            }
-            else {
-                uniqueId = cust1.getCustomerId();
-            }
-
-            for (int j = i + 1; j < customers.size(); j++) {
-                CustomerData cust2 = customers.get(j);
-                if (cust2.getCustomerId() == null && CustomerData.doesMatch(cust1, cust2)) {
-                    uniqueCustomers.add(j);
-                }
-            }
-
-            for (int uniqueCustomerIndex : uniqueCustomers) {
-                CustomerData uniqueCustomer = customers.get(uniqueCustomerIndex);
-                uniqueCustomer.setCustomerId(uniqueId);
-            }
         }
     }
 
