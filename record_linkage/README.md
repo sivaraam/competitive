@@ -17,4 +17,4 @@ Input: ./src/main/resources/input1.csv
 
 ### See also
 
-Related tinkering project on CSV files: [fun_with_csv](https://github.com/sivaraam/fun_with_csv)
+Related tinkering project on CSV files: [fun_with_csv](./fun_with_csv) ([repo](https://github.com/sivaraam/fun_with_csv))
