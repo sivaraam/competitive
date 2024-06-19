@@ -16,11 +16,14 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.atomic.AtomicReference;
 import java.util.stream.Collectors;
 
 import static org.example.data.CustomerDataIdAssigner.assignUniqueIds;
 
 public class CsvReplDemo {
+
+    private static CsvRecord headerRecord;
     private static List<CustomerData> customers = new ArrayList<>();
 
     public static void main(String[] args) {
@@ -83,12 +86,20 @@ public class CsvReplDemo {
         }
 
         try (CsvReader<CsvRecord> csv = CsvReader.builder().ofCsvRecord(path)) {
+            AtomicReference<CsvRecord> header = new AtomicReference<>();
+
             customers = csv.stream()
-                            .map(CustomerData::constructFromCsvRecords)
-                            .collect(Collectors.toList());
+                           .peek(elem -> {
+                               boolean isFirst = header.get() == null;
+                               if (isFirst) {
+                                   header.set(elem);
+                               }
+                           }).skip(1)
+                           .map(CustomerData::constructFromCsvRecords)
+                           .collect(Collectors.toList());
 
             // Throw away the header
-            customers.remove(0);
+            headerRecord = header.get();
 
             terminal.writer().println("CSV file parsed successfully.");
             terminal.flush();
@@ -106,6 +117,7 @@ public class CsvReplDemo {
         }
 
         terminal.writer().println("CSV Data:");
+        terminal.writer().println(headerRecord.getFields());
         customers.forEach(row -> terminal.writer().println(row.toCsvLine()));
         terminal.flush();
     }
