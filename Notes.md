@@ -7,18 +7,19 @@ This is a note of the various things related to competitive programming / doing 
 
 ## Useful resources
 
-- [**CatalanCabbage/notes**: Info, gathered from across the cosmos](https://github.com/CatalanCabbage/notes/tree/master)
+- [*CatalanCabbage/notes*: Info, gathered from across the cosmos](https://github.com/CatalanCabbage/notes/tree/master)
   - [System design - Primer · CatalanCabbage/notes](https://github.com/CatalanCabbage/notes/blob/master/system-design/0-primer.md)
 
 ### System Design
 
-- [**systemdesign42/system-design**: A resource to help you pass system design interview and become good at work 👇](https://github.com/systemdesign42/system-design?tab=readme-ov-file)
-- [**ByteByteGoHq/system-design-101**: Explain complex systems using visuals and simple terms. Help you prepare for system design interviews.](https://github.com/ByteByteGoHq/system-design-101#database)
-- [**System Design in a Hurry**](https://www.hellointerview.com/learn/system-design/in-a-hurry/introduction)
+- [*systemdesign42/system-design*: A resource to help you pass system design interview and become good at work 👇](https://github.com/systemdesign42/system-design?tab=readme-ov-file)
+- [*ByteByteGoHq/system-design-101*: Explain complex systems using visuals and simple terms. Help you prepare for system design interviews.](https://github.com/ByteByteGoHq/system-design-101#database)
+- [*System Design in a Hurry*](https://www.hellointerview.com/learn/system-design/in-a-hurry/introduction)
+- *<u>More resources</u>*: [System design interview guide for Software Engineers | Tech Interview Handbook](https://www.techinterviewhandbook.org/system-design/)
 
 ### Interview
 
-- [**Technical Interview Guide** for Busy Engineers | Tech Interview Handbook](https://www.techinterviewhandbook.org/) [**[repo](https://github.com/yangshun/tech-interview-handbook)**]
+- [*Technical Interview Guide* for Busy Engineers | Tech Interview Handbook](https://www.techinterviewhandbook.org/) [**[repo](https://github.com/yangshun/tech-interview-handbook)**]
   - [How candidates are evaluated in coding interviews at top tech companies | Tech Interview Handbook](https://www.techinterviewhandbook.org/coding-interview-rubrics/)
 
 ### LeetCode & co.
