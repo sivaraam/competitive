@@ -1,20 +1,20 @@
-## Competitive Programming
+# Competitive Programming
 
 A repository containing some solutions to problems from competitive programming
 platforms such as [Codechef][1] and [HackerRank][2]. Also available in
 the respective folders are the problem statements in the form of a PDF file.
 There might also be some sample input files.
 
-### Building
+## Building
 Most of the programs should be standalone so Makefile's aren't written for them.
 
-#### C++
+### C++
 `g++ solution.cpp`
 
 The programs work well with a compiler that supports
 C++14. It has been tested using a `g++` version 7.4.0-1ubuntu1~18.04.
 
-#### Java
+### Java
 `javac Solution.java`
 
 The program works well with a OpenJDK 8 Environment.
@@ -31,3 +31,7 @@ OpenJDK 64-Bit Server VM (build 25.212-b03, mixed mode)
 
 [1]: https://www.codechef.com/
 [2]: https://www.hackerrank.com/
+
+## Notes
+
+Some notes gathered while learning could be found here: [Notes.md](./Notes.md)
