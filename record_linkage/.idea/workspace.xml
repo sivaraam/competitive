@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7018b959-428e-43d3-8ac7-b9f09098d4f6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/data/CustomerDataIdAssigner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/key/MatchingKey.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/key/MatchingKeyIdsHolder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="7018b959-428e-43d3-8ac7-b9f09098d4f6" name="Changes" comment="record_linkage: refactor two-loop logic into a single loop via a matching-key map&#10;&#10;This refactoring changes the dual loop logic to a single loop&#10;one while maintaining the unique ID in a map whose keys are a&#10;set of matching keys that correspond to that ID.&#10;&#10;While at it, refactor the logic into separate classes for better&#10;readability. The map based solution is also better in the aspect&#10;that it represents the solution in a more neat manner hopefully&#10;allowing for easier possibility for further enhancements.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CsvReplDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/CsvReplDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/data/CustomerData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/data/CustomerData.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,12 +145,23 @@
       <option name="presentableId" value="Default" />
       <updated>1718273168430</updated>
     </task>
+    <task id="LOCAL-00001" summary="record_linkage: refactor two-loop logic into a single loop via a matching-key map&#10;&#10;This refactoring changes the dual loop logic to a single loop&#10;one while maintaining the unique ID in a map whose keys are a&#10;set of matching keys that correspond to that ID.&#10;&#10;While at it, refactor the logic into separate classes for better&#10;readability. The map based solution is also better in the aspect&#10;that it represents the solution in a more neat manner hopefully&#10;allowing for easier possibility for further enhancements.">
+      <option name="closed" value="true" />
+      <created>1718819979196</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1718819979196</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
+    <MESSAGE value="record_linkage: refactor two-loop logic into a single loop via a matching-key map&#10;&#10;This refactoring changes the dual loop logic to a single loop&#10;one while maintaining the unique ID in a map whose keys are a&#10;set of matching keys that correspond to that ID.&#10;&#10;While at it, refactor the logic into separate classes for better&#10;readability. The map based solution is also better in the aspect&#10;that it represents the solution in a more neat manner hopefully&#10;allowing for easier possibility for further enhancements." />
+    <option name="LAST_COMMIT_MESSAGE" value="record_linkage: refactor two-loop logic into a single loop via a matching-key map&#10;&#10;This refactoring changes the dual loop logic to a single loop&#10;one while maintaining the unique ID in a map whose keys are a&#10;set of matching keys that correspond to that ID.&#10;&#10;While at it, refactor the logic into separate classes for better&#10;readability. The map based solution is also better in the aspect&#10;that it represents the solution in a more neat manner hopefully&#10;allowing for easier possibility for further enhancements." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
