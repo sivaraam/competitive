@@ -5,6 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7018b959-428e-43d3-8ac7-b9f09098d4f6" name="Changes" comment="record_linkage: refactor two-loop logic into a single loop via a matching-key map&#10;&#10;This refactoring changes the dual loop logic to a single loop&#10;one while maintaining the unique ID in a map whose keys are a&#10;set of matching keys that correspond to that ID.&#10;&#10;While at it, refactor the logic into separate classes for better&#10;readability. The map based solution is also better in the aspect&#10;that it represents the solution in a more neat manner hopefully&#10;allowing for easier possibility for further enhancements.">
+      <change afterPath="$PROJECT_DIR$/../leetcode/two_sum/TwoSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../leetcode/two_sum/TwoSumMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../leetcode/two_sum/TwoSumSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../leetcode/two_sum/problem.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Notes.md" beforeDir="false" afterPath="$PROJECT_DIR$/../Notes.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,6 +70,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -77,23 +86,25 @@
   "keyToString": {
     "Gradle.record_linkage [:CsvReplDemo.main()].executor": "Run",
     "Gradle.record_linkage [shadowJar].executor": "Run",
+    "Java Scratch.scratch_3.executor": "Debug",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/mnt/d/kaartic/competitive/record_linkage",
+    "last_opened_file_path": "/mnt/d/kaartic/competitive",
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$APPLICATION_CONFIG_DIR$/scratches" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CsvReplDemo">
+  <component name="RunManager" selected="Java Scratch.scratch_3">
     <configuration name="CsvReplDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.CsvReplDemo" />
       <module name="record_linkage.main" />
@@ -129,8 +140,16 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="scratch_3" type="Java Scratch" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="scratch_3" />
+      <option name="SCRATCH_FILE_URL" value="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_3.java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Java Scratch.scratch_3" />
         <item itemvalue="Application.CsvReplDemo" />
         <item itemvalue="Gradle.record_linkage [shadowJar]" />
       </list>
