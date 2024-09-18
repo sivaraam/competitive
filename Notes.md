@@ -9,6 +9,7 @@ This is a note of the various things related to competitive programming / doing 
 ## Useful resources
 
 - [*CatalanCabbage/notes*: Info, gathered from across the cosmos](https://github.com/CatalanCabbage/notes/tree/master)
+- Deep diveable: [basecs – Medium](https://medium.com/basecs)
 
 ### LeetCode & co.
 
@@ -50,7 +51,20 @@ Ref: [My Salary For the past 7 years. From 3.5 LPA , to 4L per month (Excluding 
 
 A good twitter thread that deeply resonates with me: [Akshaya Sivaraman on Twitter: "How did I go from a busily scheduled life to one with substantial unstructured time?](https://twitter.com/AksUnik/status/1373654933463920645 )
 
-## Other notes
+## Misc. notes
+
+### Hashtable / HashMap
+
+- _Initial capacity and load factor_ affect the performance of hash table / map.
+- It is *open*: in the case of a "hash collision", a single bucket stores multiple entries.
+- Iterators returned by "collection view methods" are *fail-fast*: i.e., they throw `ConcurrentModificationException` if they detect a concurrent modification of the underlying hashtable. This is *<u>not</u> fool-proof / guaranteed*. So, implementations should not depend on the same.
+- Hashtable is *synchronized*. HashMap is not. For thread safe usage, a *ConcurrentHashMap* is recommended.
+
+#### References
+
+- [JavaDoc](https://docs.oracle.com/javase/8/docs/api/java/util/Hashtable.html)
+- [Hash table cheatsheet for coding interviews | Tech Interview Handbook](https://www.techinterviewhandbook.org/algorithms/hash-table/)
+- [What are hashtables and hashmaps and their typical use cases?](https://stackoverflow.com/q/138273/5614968)
 
 ### Solving algorithmic problems
 
@@ -70,3 +84,8 @@ A good twitter thread that deeply resonates with me: [Akshaya Sivaraman on Twitt
 1. B.U.D - Bottleneck, Unnecessary, Duplicates - walk through the brute force (to identity bottlenecks, unnecessary and duplicated code)
 2. Space-time tradeoffs - you can almost always save some time by trading off some space. Think about Hash tables. 
 3. Do it yourself - use a large generic example and try to solve it yourself. You'll identify some nice ways to optimize when solving the problem for a large test case.
+
+## Activity log
+
+- **18/Sep/2024** - Continue working on the optimal solution for the Two sum problem.
+- **17/Sep/2024** - Worked on the [Two sum problem](https://leetcode.com/problems/two-sum/description/). Completed the brute-force solution. Was working on optimizing the solution and was reading up on HashMap / HashTable a bit.
