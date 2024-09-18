@@ -2,6 +2,9 @@ import java.util.Arrays;
 
 /**
  * Brute force approach to the two-sum problem.
+ * <p>
+ * LeetCode runtime: 31ms
+ * LeetCode memory: 44.9 MB
  */
 public class TwoSum {
     private static int resultCount = 1;
