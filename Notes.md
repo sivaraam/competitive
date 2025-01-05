@@ -2,6 +2,7 @@ This is a note of the various things related to competitive programming / doing 
 
 ## Things to do
 
+- [ ] [Advent of Code](https://adventofcode.com/2024/about) problems
 - [ ] [**Blind75** - Curated List of Top 75 LeetCode Questions to Save Your Time | Tech Industry - Blind](https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Questions-to-Save-Your-Time-OaM1orEU)
 - [ ] [Hacker Rank skill certification / verification](https://www.hackerrank.com/skills-verification)
 - [ ] [Build a SaaS product with Next.js, Supabase and Stripe | egghead.io](https://egghead.io/courses/build-a-saas-product-with-next-js-supabase-and-stripe-61f2bc20)
@@ -29,11 +30,13 @@ This is a note of the various things related to competitive programming / doing 
 - [*ByteByteGoHq/system-design-101*: Explain complex systems using visuals and simple terms. Help you prepare for system design interviews.](https://github.com/ByteByteGoHq/system-design-101#database)
 - [*System Design in a Hurry*](https://www.hellointerview.com/learn/system-design/in-a-hurry/introduction)
 - *<u>More resources</u>*: [System design interview guide for Software Engineers | Tech Interview Handbook](https://www.techinterviewhandbook.org/system-design/)
+- [Online Coding Courses - AI-Powered Interactive Learning](https://www.educative.io/explore)
 
 ### Interview
 
 - [*Technical Interview Guide* for Busy Engineers | Tech Interview Handbook](https://www.techinterviewhandbook.org/) [**[repo](https://github.com/yangshun/tech-interview-handbook)**]
   - [How candidates are evaluated in coding interviews at top tech companies | Tech Interview Handbook](https://www.techinterviewhandbook.org/coding-interview-rubrics/)
+- _Mock Interview_: [Hume AI](https://www.hume.ai/)
 
 ### Helpful point
 
@@ -46,6 +49,20 @@ This is a note of the various things related to competitive programming / doing 
 > See also [buildyourownx GitHub profile](https://github.com/codecrafters-io/build-your-own-x) which is great.
 
 Ref: [My Salary For the past 7 years. From 3.5 LPA , to 4L per month (Excluding Stocks) : r/developersIndia](https://www.reddit.com/r/developersIndia/comments/1f5g5yl/comment/lksm0vj/?utm_source=share&utm_medium=mweb3x&utm_name=mweb3xcss&utm_term=1&utm_content=share_button)
+
+#### By Davis
+
+> - I used educative.io for system design, and then random videos
+>
+>   https://neetcode.io/roadmap - This for DSA
+>
+> - I took some notes while I did it.
+>   https://github.com/CatalanCabbage/notes/tree/master?tab=readme-ov-file#concepts
+>
+>   Go through these topics, you'll have all the lego blocks
+>   Then "hld and lld for xyz" videos will show you how to put the blocks together
+>
+> - That way you'll be able to explain an overall system and then go into depth when they focus on a specific component as well
 
 ### Helpful advice about changing lifestyle
 
