@@ -3,9 +3,11 @@ This is a note of the various things related to competitive programming / doing 
 ## Things to do
 
 - [ ] [Advent of Code](https://adventofcode.com/2024/about) problems
+  - [ ] Advent of Code solutions in Kotlin 
 - [ ] [**Blind75** - Curated List of Top 75 LeetCode Questions to Save Your Time | Tech Industry - Blind](https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Questions-to-Save-Your-Time-OaM1orEU)
 - [ ] [Hacker Rank skill certification / verification](https://www.hackerrank.com/skills-verification)
 - [ ] [Build a SaaS product with Next.js, Supabase and Stripe | egghead.io](https://egghead.io/courses/build-a-saas-product-with-next-js-supabase-and-stripe-61f2bc20)
+- [ ] Use this list as a possible way to search for companies: https://www.electronic-city.in/companies/index.php
 
 ## Useful resources
 
