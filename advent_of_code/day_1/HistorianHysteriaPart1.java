@@ -6,7 +6,6 @@ public class HistorianHysteriaPart1 {
     public static void main(String[] args) {
         ArrayList<Integer> array1 = new ArrayList<>();
         ArrayList<Integer> array2 = new ArrayList<>();
-        Map<Integer, Integer> occurences = new HashMap<>();
         long totalDistance = 0;
 
         try {
