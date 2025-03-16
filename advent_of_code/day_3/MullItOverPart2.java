@@ -22,7 +22,9 @@ public class MullItOverPart2 {
         Pattern doPattern = Pattern.compile("do\\(\\)");
         Pattern dontPattern = Pattern.compile("don't\\(\\)");
 
-        // Use regex to extract all the mul pattern from each line of the string
+        // Use regex to extract all the do and don't pattern from the combined input string
+        // This helps us identify the search zones from the whole input which is the only
+        // area we need to look for 'mul' instructions.
         Matcher doMatch = doPattern.matcher(combinedInput);
         Matcher dontMatch = dontPattern.matcher(combinedInput);
         int startIndex = 0, doStart = -1, dontStart = -1;
@@ -49,6 +51,7 @@ public class MullItOverPart2 {
             searchZones.add(new AbstractMap.SimpleEntry<>(startIndex, combinedInput.length()));
         }
 
+        // Search for the mul instructions in the search zones
         for (Map.Entry<Integer, Integer> searchZone : searchZones) {
             String searchPhrase = combinedInput.substring(searchZone.getKey(), searchZone.getValue());
             searchPhrases.append(searchPhrase).append("\n\n");
