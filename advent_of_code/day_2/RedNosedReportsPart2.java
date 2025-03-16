@@ -70,16 +70,19 @@ class RedNosedReportsPart2 {
             int nextElement =  currentReport.get(i+1);
 
             if (!isSafeReportPair(firstElement, nextElement, increasing)) {
-                if (canSkipOneReport && i != (currentReport.size() - 2)) {
-                    if (!isSafeReportPair(firstElement, currentReport.get(i+2), increasing)) {
-                        return false;
+                if (canSkipOneReport) {
+                    if (i != (currentReport.size() - 2)) {
+                        if (!isSafeReportPair(firstElement, currentReport.get(i + 2), increasing)) {
+                            return false;
+                        }
+                        canSkipOneReport = false;
+                        i += 2;
+                        continue;
                     }
-                    canSkipOneReport = false;
-                    i+=2;
-                    continue;
-                }
-                else if (canSkipOneReport && i == (currentReport.size() - 2)) {
-                    return true;
+                    else {
+                        // last pair alone is unsafe
+                        return true;
+                    }
                 }
                 else {
                     return false;
