@@ -48,7 +48,7 @@ public class PrintQueuePart2 {
 
         int conformantUpdatesMiddleSum = 0;
         for (List<Integer> pagesToUpdate : allUpdates) {
-            if (isConformantUpdate(shouldAppearBefore, pagesToUpdate)) {
+            if (isCorrectedConformantUpdate(shouldAppearBefore, pagesToUpdate)) {
                 if (pagesToUpdate.size() % 2 == 0) {
                     System.err.println("Pages to update is even!");
                 }
@@ -60,7 +60,7 @@ public class PrintQueuePart2 {
         System.out.println("Corrected conformant updates middle sum: " + conformantUpdatesMiddleSum);
     }
 
-    private static boolean isConformantUpdate(Map<Integer, Set<Integer>> shouldAppearBefore, List<Integer> pagesToUpdate) {
+    private static boolean isCorrectedConformantUpdate(Map<Integer, Set<Integer>> shouldAppearBefore, List<Integer> pagesToUpdate) {
         boolean incorrectUpdateCorrected = false;
 
         for (int i = 0; i < pagesToUpdate.size() - 1; i++) {
