@@ -1,6 +1,7 @@
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.net.URISyntaxException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -15,12 +16,12 @@ import java.util.Scanner;
  *  find a solution that's more neater.
  */
 class RedNosedReportsPart2 {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, URISyntaxException {
         List<String> unsafeReports = new ArrayList<>();
         long safeReports = 0;
 
         try {
-            Scanner scanner = new Scanner(new File("/mnt/d/kaartic/competitive/advent_of_code/day_2/actual_input.txt"));
+            Scanner scanner = new Scanner(new File(RedNosedReportsPart2.class.getResource("./day_2_actual_input.txt").toURI()));
             while (scanner.hasNextLine()) {
                 List<Integer> currentReport = new ArrayList<>();
                 String line = scanner.nextLine();

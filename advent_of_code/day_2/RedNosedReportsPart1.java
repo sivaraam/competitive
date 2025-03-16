@@ -1,5 +1,6 @@
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.net.URISyntaxException;
 import java.util.*;
 
 class RedNosedReportsPart1 {
@@ -7,7 +8,7 @@ class RedNosedReportsPart1 {
         long safeReports = 0;
 
         try {
-            Scanner scanner = new Scanner(new File("/mnt/d/kaartic/competitive/advent_of_code/day_2/actual_input.txt"));
+            Scanner scanner = new Scanner(new File(RedNosedReportsPart1.class.getResource("./day_2_actual_input.txt").toURI()));
             while (scanner.hasNextLine()) {
                 List<Integer> currentReport = new ArrayList<>();
                 String line = scanner.nextLine();
@@ -20,6 +21,8 @@ class RedNosedReportsPart1 {
             scanner.close();
         } catch (FileNotFoundException e) {
             System.err.println("File not found.");
+        } catch (URISyntaxException e) {
+            throw new RuntimeException(e);
         }
 
         System.out.println("Safe reports: " + safeReports);

@@ -1,19 +1,20 @@
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.net.URISyntaxException;
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 public class PrintQueuePart1 {
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(String[] args) throws FileNotFoundException, URISyntaxException {
         Map<Integer, Set<Integer>> shouldAppearBefore = new HashMap<>();
         List<List<Integer>> allUpdates = new ArrayList<>();
 
         final Pattern pageOrderPattern = Pattern.compile("([\\d]+)\\|([\\d]+)");
         final Pattern pagesToProduceInUpdate = Pattern.compile("([\\d]+\\,[\\d]+)+[\\d]+");
 
-        try (Scanner scanner = new Scanner(new File("/mnt/d/kaartic/competitive/advent_of_code/day_5/actual_input.txt"))) {
+        try (Scanner scanner = new Scanner(new File(PrintQueuePart1.class.getResource("./day_5_actual_input.txt").toURI()))) {
             while (scanner.hasNextLine()) {
                 String line = scanner.nextLine();
                 if (line.matches(pageOrderPattern.pattern())) {

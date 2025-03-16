@@ -1,15 +1,16 @@
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.net.URISyntaxException;
 import java.util.*;
 
 public class CeresSearchPart1 {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws URISyntaxException {
         List<List<Character>> grid = new ArrayList<>();
         int width;
         int height;
 
         try {
-            Scanner scanner = new Scanner(new File("/mnt/d/kaartic/competitive/advent_of_code/day_4/actual_input.txt"));
+            Scanner scanner = new Scanner(new File(CeresSearchPart1.class.getResource("./day_4_actual_input.txt").toURI()));
             while (scanner.hasNextLine()) {
                 String line = scanner.nextLine();
                 List<Character> gridRow = new ArrayList<>(line.length());
@@ -31,10 +32,10 @@ public class CeresSearchPart1 {
         height = grid.size();
         width = grid.get(0).size();
 
-        // Print the grid to verify
-        for (List<Character> rowArray : grid) {
-            System.out.println(rowArray);
-        }
+        // Debugging: Print the grid to verify
+//        for (List<Character> rowArray : grid) {
+//            System.out.println(rowArray);
+//        }
 
         XmasGrid xmasGrid = new XmasGrid(grid, width, height);
         Set<XmasCoords> allXmasCoords = new HashSet<>();
