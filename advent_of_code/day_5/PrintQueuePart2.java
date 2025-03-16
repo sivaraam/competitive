@@ -69,7 +69,7 @@ public class PrintQueuePart2 {
                 Set<Integer> pagesCantAppearLater = shouldAppearBefore.get(currentPage);
                 int laterPage = pagesToUpdate.get(j);
 
-                if (pagesCantAppearLater != null && pagesCantAppearLater.contains(laterPage)) {
+                if (pagesCantAppearLater.contains(laterPage)) {
                     pagesToUpdate.remove(j);
                     pagesToUpdate.add(i, laterPage);
                     incorrectUpdateCorrected = true;

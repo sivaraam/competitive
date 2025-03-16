@@ -69,7 +69,7 @@ public class PrintQueuePart1 {
 
             for (int j = i+1; j < pagesToUpdate.size(); j++) {
                 int laterPage = pagesToUpdate.get(j);
-                if (pagesCantAppearLater != null && pagesCantAppearLater.contains(laterPage)) {
+                if (pagesCantAppearLater.contains(laterPage)) {
                     return false;
                 }
             }
