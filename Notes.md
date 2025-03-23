@@ -3,8 +3,12 @@ This is a note of the various things related to competitive programming / doing 
 ## Things to do
 
 - [ ] [Advent of Code](https://adventofcode.com/2024/about) problems
-  - [ ] Advent of Code solutions in Kotlin 
-- [ ] [**Blind75** - Curated List of Top 75 LeetCode Questions to Save Your Time | Tech Industry - Blind](https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Questions-to-Save-Your-Time-OaM1orEU)
+  - [ ] Advent of Code solutions in Kotlin
+- [*System Design in a Hurry*](https://www.hellointerview.com/learn/system-design/in-a-hurry/introduction)
+- [ ] [LeetCode](https://leetcode.com/)
+  - [ ] [Blind75 - Curated List of Top 75 LeetCode Questions to Save Your Time | Tech Industry - Blind](https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Questions-to-Save-Your-Time-OaM1orEU)
+  - [ ] [Top Interview 150 - Stdy Plan - LeetCode](https://leetcode.com/studyplan/top-interview-150/)
+  - [ ] [fishercoder1534/Leetcode: Solutions to LeetCode problems; updated daily.](https://github.com/fishercoder1534/Leetcode)
 - [ ] [Hacker Rank skill certification / verification](https://www.hackerrank.com/skills-verification)
 - [ ] [Build a SaaS product with Next.js, Supabase and Stripe | egghead.io](https://egghead.io/courses/build-a-saas-product-with-next-js-supabase-and-stripe-61f2bc20)
 - [ ] Use this list as a possible way to search for companies: https://www.electronic-city.in/companies/index.php
@@ -28,9 +32,13 @@ This is a note of the various things related to competitive programming / doing 
 ### System Design
 
 - [*System design - Primer* · CatalanCabbage/notes](https://github.com/CatalanCabbage/notes/blob/master/system-design/0-primer.md)
+- [*System Design in a Hurry*](https://www.hellointerview.com/learn/system-design/in-a-hurry/introduction)
+- [*Educative.io*](https://www.educative.io/) - Recommended by Davis for System Design Course
+- [*ashishps1/awesome-system-design-resources*: Learn System Design concepts and prepare for interviews using free resources.](https://github.com/ashishps1/awesome-system-design-resources?tab=readme-ov-file)
+- [*donnemartin/system-design-primer*: Learn how to design large-scale systems. Prep for the system design interview. Includes Anki flashcards.](https://github.com/donnemartin/system-design-primer?tab=readme-ov-file)
 - [*systemdesign42/system-design*: A resource to help you pass system design interview and become good at work 👇](https://github.com/systemdesign42/system-design?tab=readme-ov-file)
 - [*ByteByteGoHq/system-design-101*: Explain complex systems using visuals and simple terms. Help you prepare for system design interviews.](https://github.com/ByteByteGoHq/system-design-101#database)
-- [*System Design in a Hurry*](https://www.hellointerview.com/learn/system-design/in-a-hurry/introduction)
+
 - *<u>More resources</u>*: [System design interview guide for Software Engineers | Tech Interview Handbook](https://www.techinterviewhandbook.org/system-design/)
 - [Online Coding Courses - AI-Powered Interactive Learning](https://www.educative.io/explore)
 
