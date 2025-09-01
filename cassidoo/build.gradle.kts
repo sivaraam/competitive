@@ -1,5 +1,6 @@
 plugins {
     id("java")
+    application
 }
 
 group = "org.example"
@@ -28,4 +29,8 @@ tasks.named<Test>("test") {
     testLogging {
         events("passed")
     }
+}
+
+application {
+    mainClass = "org.sivaraam.cassidoo.sep01_2025.CountBattleShips"
 }
