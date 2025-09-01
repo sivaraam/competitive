@@ -4,7 +4,7 @@ This is a note of the various things related to competitive programming / doing 
 
 - [ ] [Advent of Code](https://adventofcode.com/2024/about) problems
   - [ ] Advent of Code solutions in Kotlin
-- [*System Design in a Hurry*](https://www.hellointerview.com/learn/system-design/in-a-hurry/introduction)
+- [ ] [System Design in a Hurry](https://www.hellointerview.com/learn/system-design/in-a-hurry/introduction)
 - [ ] [LeetCode](https://leetcode.com/)
   - [ ] [Blind75 - Curated List of Top 75 LeetCode Questions to Save Your Time | Tech Industry - Blind](https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Questions-to-Save-Your-Time-OaM1orEU)
   - [ ] [Top Interview 150 - Stdy Plan - LeetCode](https://leetcode.com/studyplan/top-interview-150/)
@@ -31,6 +31,7 @@ This is a note of the various things related to competitive programming / doing 
 
 ### System Design
 
+- [*A Roadmap*](./System-Design-roadmap.jpg)
 - [*System design - Primer* · CatalanCabbage/notes](https://github.com/CatalanCabbage/notes/blob/master/system-design/0-primer.md)
 - [*System Design in a Hurry*](https://www.hellointerview.com/learn/system-design/in-a-hurry/introduction)
 - [*Educative.io*](https://www.educative.io/) - Recommended by Davis for System Design Course
@@ -73,6 +74,60 @@ Ref: [My Salary For the past 7 years. From 3.5 LPA , to 4L per month (Excluding 
 >   Then "hld and lld for xyz" videos will show you how to put the blocks together
 >
 > - That way you'll be able to explain an overall system and then go into depth when they focus on a specific component as well
+>
+
+**Further notes**:
+
+> I used educative.io
+>
+> But this has most topics from there
+>
+> I think this is the best way:
+>
+>  1. for concepts, go through topics here https://github.com/CatalanCabbage/notes/tree/master/system-design
+>  2. Read externally about each topic, etc etc
+>  3. Then search and read/watch on yt - netflix architecture, url shortener architecture, etc etc
+>
+> IMO, there are only a few "kinds" of use cases
+>
+> Like video streaming, ticket booking, social media etc
+>
+> For each one watch/read Netflix architecture, bookMyShow architecture, Insta architecture and so on
+>
+> Most Interview questions will fall into those buckets, so you'll have a high level idea of best approach to take
+>
+> Then is the part where you dive in.
+>
+> E.g. In social media, they will pick one specific part - caching, or consistency, etc
+>
+> At that point, you would have learnt the concepts alone in depth right (first step)
+>
+> You can use that knowledge to compare and discuss the best approach in that part
+>
+> Use that and resources like these to get a lay of the building blocks, learn from whatever sources your want
+>
+> https://github.com/donnemartin/system-design-primer?tab=readme-ov-file
+>
+> https://github.com/ashishps1/awesome-system-design-resources?tab=readme-ov-file
+
+**Even more notes**:
+
+> We just spin the context of our experience to match the expectations and fill the knowledge gaps if needed before the interview 👀
+>
+> All you need is LC, system design and a load of bullshit 😂
+>
+> ...
+>
+> Beyond the usual stuff, it's mostly luck.
+> I try to look at the company/team to try and figure it out, also have a few questions about the product ready
+>
+> And try asking the HR exactly what we can expect (with options so it's easy for them to pick - like am I expected to know xyz, or will it be xyz etc)
+>
+> HR's interests are aligned with ours since they want to get people through the interviews and hire people
+>
+> ...
+>
+> "What do you use to find relevant companies?" - LinkedIn - but these days I love the HN who's hiring thread. I've heard good things about wellfound too.
 
 ### Helpful advice about changing lifestyle
 
@@ -116,3 +171,13 @@ A good twitter thread that deeply resonates with me: [Akshaya Sivaraman on Twitt
 
 - **18/Sep/2024** - Continue working on the optimal solution for the Two sum problem.
 - **17/Sep/2024** - Worked on the [Two sum problem](https://leetcode.com/problems/two-sum/description/). Completed the brute-force solution. Was working on optimizing the solution and was reading up on HashMap / HashTable a bit.
+- **02/Sep/2025** - Completed Cassidoo's Count battleships problem. Keeping track in Goodtime.
+
+## Places to look for openings
+
+- [Startup Jobs at YC Companies in Engineering, Product, Design, Remote and more | Y Combinator's Work at a Startup](https://www.workatastartup.com/)
+- [Free & Open Source Jobs - fossjobs.net](https://www.fossjobs.net/)
+- [Remote open source Jobs | Remotive.com](https://remotive.com/remote-open-source-jobs?tags=open%20source)
+- [Jobs | Open Source JobHub](https://opensourcejobhub.com/jobs/)
+- [GitJobs](https://gitjobs.dev/)
+- [Cal.com - most public private company](https://cal.com/open)
