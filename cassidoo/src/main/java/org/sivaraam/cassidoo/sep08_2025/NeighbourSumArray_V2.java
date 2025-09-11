@@ -29,6 +29,11 @@ public class NeighbourSumArray_V2 {
         System.out.println("Sum of the array: " + neighbourSum(arr));
     }
 
+    /**
+     * This method differs from the V1 code in the fact that it uses
+     * a more straight-forward approach and avoids the special case
+     * handling that the V1 requires.
+     */
     static double neighbourSum(List<Double> nums) {
         double sum = 0d;
 
