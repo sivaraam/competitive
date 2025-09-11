@@ -1,22 +1,13 @@
 package org.sivaraam.cassidoo.sep01_2025;
 
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-
-import java.util.logging.Logger;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class CountBattleShipsTest {
-    private static Logger log = Logger.getLogger(CountBattleShipsTest.class.getName());
-
-    @BeforeAll
-    static void setup() {
-        log.info("@BeforeAll - executes once before all test methods in this class");
-    }
 
     @Test
-    public void testSingleBattleShip() {
+    void testSingleBattleShip() {
         char[][] board = {
                 {'.', '.', '.'},
                 {'.', 'X', '.'},
@@ -26,7 +17,7 @@ public class CountBattleShipsTest {
     }
 
     @Test
-    public void testMultipleHorizontalBattleShips() {
+    void testMultipleHorizontalBattleShips() {
         char[][] board = {
                 {'X', 'X', '.'},
                 {'.', '.', '.'},
@@ -36,7 +27,7 @@ public class CountBattleShipsTest {
     }
 
     @Test
-    public void testMultipleVerticalBattleShips() {
+    void testMultipleVerticalBattleShips() {
         char[][] board = {
                 {'X', '.', '.'},
                 {'X', '.', 'X'},
@@ -46,7 +37,7 @@ public class CountBattleShipsTest {
     }
 
     @Test
-    public void testEdgeCaseSingleRow() {
+    void testEdgeCaseSingleRow() {
         char[][] board = {
                 {'X', '.', 'X', '.', 'X'}
         };
@@ -54,7 +45,7 @@ public class CountBattleShipsTest {
     }
 
     @Test
-    public void testEdgeCaseSingleColumn() {
+    void testEdgeCaseSingleColumn() {
         char[][] board = {
                 {'X'},
                 {'.'},
@@ -66,7 +57,7 @@ public class CountBattleShipsTest {
     }
 
     @Test
-    public void testEdgeCaseLargeBoard() {
+    void testEdgeCaseLargeBoard() {
         char[][] board = {
                 {'X', '.', '.', '.', 'X'},
                 {'.', 'X', '.', '.', '.'},
@@ -78,7 +69,7 @@ public class CountBattleShipsTest {
     }
 
     @Test
-    public void testEdgeCaseNoBattleships() {
+    void testEdgeCaseNoBattleships() {
         char[][] board = {
                 {'.', '.', '.'},
                 {'.', '.', '.'},
