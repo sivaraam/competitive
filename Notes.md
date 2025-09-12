@@ -35,6 +35,7 @@ This is a note of the various things related to competitive programming / doing 
 - [*System design - Primer* · CatalanCabbage/notes](https://github.com/CatalanCabbage/notes/blob/master/system-design/0-primer.md)
 - [*System Design in a Hurry*](https://www.hellointerview.com/learn/system-design/in-a-hurry/introduction)
 - [*Educative.io*](https://www.educative.io/) - Recommended by Davis for System Design Course
+  - [Grokking System Design Interview: Patterns & Mock Interviews](https://www.educative.io/courses/grokking-the-system-design-interview)
 - [*ashishps1/awesome-system-design-resources*: Learn System Design concepts and prepare for interviews using free resources.](https://github.com/ashishps1/awesome-system-design-resources?tab=readme-ov-file)
 - [*donnemartin/system-design-primer*: Learn how to design large-scale systems. Prep for the system design interview. Includes Anki flashcards.](https://github.com/donnemartin/system-design-primer?tab=readme-ov-file)
 - [*systemdesign42/system-design*: A resource to help you pass system design interview and become good at work 👇](https://github.com/systemdesign42/system-design?tab=readme-ov-file)
