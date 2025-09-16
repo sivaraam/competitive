@@ -1,6 +1,7 @@
 plugins {
     id("java")
     application
+    kotlin("jvm") version "1.9.23"
 }
 
 group = "org.example"
@@ -19,6 +20,7 @@ dependencies {
     // JUnit
     testImplementation("org.junit.jupiter:junit-jupiter:5.10.0")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+    implementation(kotlin("stdlib-jdk8"))
 }
 
 tasks.named<Test>("test") {
@@ -33,4 +35,7 @@ tasks.named<Test>("test") {
 
 application {
     mainClass = "org.sivaraam.cassidoo.sep01_2025.CountBattleShips"
+}
+kotlin {
+    jvmToolchain(17)
 }
