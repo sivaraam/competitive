@@ -1,6 +1,7 @@
 package org.sivaraam.cassidoo.sep08_2025;
 
 import org.junit.jupiter.api.Test;
+import org.sivaraam.cassidoo.self.NeighbourSumArray_precision_BigDecimal_Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 import java.util.List;
@@ -82,6 +83,12 @@ public class NeighbourSumArray_precision_naive_Test {
                 "Alternating tiny and huge numbers test failed");
     }
 
+    /**
+     * Expected to fail owing to precision issues.
+     * <p>
+     * Check the test case using BigDecimal where this succeeds:
+     * {@link NeighbourSumArray_precision_BigDecimal_Test#testNearDoublePrecisionLimits()}
+     */
     @Test
     public void testNearDoublePrecisionLimits() {
         List<Double> input = Arrays.asList(1.7976931348623157e308, 1e-100, -1.7976931348623157e308);
