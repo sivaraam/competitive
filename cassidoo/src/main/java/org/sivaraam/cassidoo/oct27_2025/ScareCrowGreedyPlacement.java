@@ -60,12 +60,6 @@ public class ScareCrowGreedyPlacement {
             // Place scarecrow as far right as possible while still covering i
             int scarecrowPos = Math.min(i + radius, n - 1);
 
-            // Make sure we can actually reach position i from scarecrowPos
-            // (in case we hit the boundary)
-            while (scarecrowPos - radius > i) {
-                scarecrowPos--;
-            }
-
             scarecrows.add(scarecrowPos);
 
             // Mark all positions this scarecrow protects
