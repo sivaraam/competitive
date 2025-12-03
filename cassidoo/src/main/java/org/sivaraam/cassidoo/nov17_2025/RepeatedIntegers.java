@@ -16,6 +16,8 @@ import java.util.stream.IntStream;
  *   > repeatedIntegers(4)
  *   > [1, 2, 2, 3, 3, 3, 4, 4, 4, 4]
  * </pre>
+ * TODO: Try some other concurrent execution approach
+ *  like via Threads / Executors.
  */
 public class RepeatedIntegers {
     public static void main(String[] args) {

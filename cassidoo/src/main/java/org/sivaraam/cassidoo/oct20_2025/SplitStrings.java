@@ -18,6 +18,7 @@ import java.util.List;
  *   > ['Super', 'califragi', 'list', 'icex', 'pial', 'idoc', 'ious']
  * </pre>
  */
+// TODO: Try to achieve this via streams.
 public class SplitStrings {
     public static void main(String[] args) {
         String str = "Supercalifragilisticexpialidocious";
