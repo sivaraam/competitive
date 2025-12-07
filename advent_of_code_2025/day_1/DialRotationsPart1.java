@@ -9,21 +9,21 @@ public class DialRotationsPart1 {
     private static int DIAL_POSITIONS = 100;
 
     public static void main(String[] args) throws URISyntaxException, FileNotFoundException {
-        int position  = 50;
+        int position = 50;
         Scanner scanner = new Scanner(new File(DialRotations.class.getResource("./day_1_actual_input.txt").toURI()));
         List<String> rotations = new ArrayList<>();
         while (scanner.hasNextLine()) {
             String line = scanner.nextLine();
-	    rotations.add(line);
+            rotations.add(line);
         }
- 
- 	int password = 0;
+
+        int password = 0;
         for (String rotation : rotations) {
             position = moveNeedle(position, rotation);
-	    
-	    if (position == 0) {
+
+            if (position == 0) {
                 password++;
-	    }
+            }
 
             // System.out.println("Interim password after rotation " + rotation + " : " + password + "; Position: " + position);
         }
@@ -37,34 +37,30 @@ public class DialRotationsPart1 {
 
         if (isLeft) {
             return leftNeedleMove(position, distance);
-        }
-        else {
+        } else {
             return rightNeedleMove(position, distance);
         }
     }
 
     private static int rightNeedleMove(int position, int distance) {
         int newPosition = position + (distance % DIAL_POSITIONS);
-
-	if (newPosition >= DIAL_POSITIONS) {
+        if (newPosition >= DIAL_POSITIONS) {
             newPosition = newPosition - DIAL_POSITIONS;
         }
 
-	return newPosition;
+        return newPosition;
     }
 
     private static int leftNeedleMove(int position, int distance) {
         int newPosition = position - (distance % DIAL_POSITIONS);
 
         if (newPosition < 0) {
-	    newPosition = DIAL_POSITIONS + newPosition;
+            newPosition = DIAL_POSITIONS + newPosition;
         }
 
-	return newPosition;
+        return newPosition;
 
     }
-
-
 
 
 }
