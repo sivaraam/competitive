@@ -10,7 +10,7 @@ public class DialRotationsPart1 {
 
     public static void main(String[] args) throws URISyntaxException, FileNotFoundException {
         int position = 50;
-        Scanner scanner = new Scanner(new File(DialRotations.class.getResource("./day_1_actual_input.txt").toURI()));
+        Scanner scanner = new Scanner(new File(DialRotationsPart1.class.getResource("./day_1_actual_input.txt").toURI()));
         List<String> rotations = new ArrayList<>();
         while (scanner.hasNextLine()) {
             String line = scanner.nextLine();
